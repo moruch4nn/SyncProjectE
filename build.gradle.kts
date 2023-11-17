@@ -13,7 +13,7 @@ tasks.withType<JavaCompile> {
 }
 
 minecraft {
-    mappings("snapshot", "20171003-1.12")
+    mappings("official", "1.16.5")
 }
 
 archivesName.set("syncprojecte")
@@ -32,8 +32,8 @@ val NamedDomainObjectContainer<Configuration>.shadow: NamedDomainObjectProvider<
     get() = named<Configuration>("shadow")
 
 dependencies {
-    minecraft("net.minecraftforge:forge:1.12.2-14.23.5.2860")
-    compileOnly(("curse.maven:projecte-226410:2702991"))
+    minecraft("net.minecraftforge:forge:1.16.5-36.2.39")
+    compileOnly(("curse.maven:projecte-226410:3736621"))
     shadow(kotlin("stdlib"))
 }
 
@@ -53,7 +53,7 @@ tasks.jar {
             if(file.isDirectory) collection else collection.plus(zipTree(file))
         }
     })
-    exclude("META-INF", "META-INF/**")
+    // exclude("META-INF", "META-INF/**")
 }
 
 tasks.jar {
