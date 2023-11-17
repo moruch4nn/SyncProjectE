@@ -1,0 +1,17 @@
+[
+{
+  "modid": "syncprojecte",
+  "name": "Sync ProjectE Knowledge",
+  "description": "Share/sync ProjectE's EMC and knowledge with your friends!",
+  "version": "1.0",
+  "mcversion": "1.12.x",
+  "url": "",
+  "updateUrl": "All Rights Reserved",
+  "authorList": ["moruch4nn"],
+  "credits": "This mod allows you to share ProjectE's EMC with your friends.",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["projecte"],
+  "dependencies": ["projecte"]
+}
+]
